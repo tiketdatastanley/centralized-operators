@@ -6,7 +6,7 @@ outputs:
 - {name: output, type: Float}
 implementation:
   container:
-    image: python:3.7
+    image: asia-docker.pkg.dev/tk-test-data/kubebuild/operators/multiply_op:v1.0.0
     command:
     - sh
     - -ec
