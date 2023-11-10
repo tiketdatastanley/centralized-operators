@@ -6,7 +6,7 @@ outputs:
 - {name: output, type: Float}
 implementation:
   container:
-    image: asia-docker.pkg.dev/tk-test-data/kubebuild/operators/multiply_op:v1.0.0
+    image: python:3.7
     command:
     - sh
     - -ec
@@ -18,7 +18,7 @@ implementation:
       def multiply_op(num1, num2):
           from src.core import Multiplier
 
-          obj = Multipler()
+          obj = Multiplier()
           out = obj(num1, num2)
 
           return (out, )
